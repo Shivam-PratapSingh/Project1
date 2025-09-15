@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - CropAI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrapper">
+      <div class="logo">
+        <div class="logo-icon">🌱</div>
+        <span class="logo-text">Smart Harvest AI</span>
+      </div>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-outline">Home</a>
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-container">
+      <h2>Register</h2>
+      <form id="registerForm" class="auth-form">
+        <div class="form-group">
+          <label for="registerName">Full Name</label>
+          <input type="text" id="registerName" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="registerPhone">Phone Number</label>
+          <input type="tel" id="registerPhone" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="registerAddress">Address</label>
+          <textarea id="registerAddress" class="form-input" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="registerRole">Role</label>
+          <select id="registerRole" class="form-select" required>
+            <option value="">Select role</option>
+            <option value="farmer">Farmer</option>
+            <option value="researcher">Researcher</option>
+            <option value="agronomist">Agronomist</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="registerConfirm">Confirm Password</label>
+          <input type="password" id="registerConfirm" class="form-input" required />
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="registerTerms" required />
+          <label for="registerTerms">I agree to the Terms & Conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Register</button>
+        <p class="switch-text">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

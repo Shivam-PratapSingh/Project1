@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - CropAI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-wrapper">
+      <div class="logo">
+        <div class="logo-icon">🌱</div>
+        <span class="logo-text">Smart Harvest AI</span>
+      </div>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-outline">Home</a>
+        <a href="register.html" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-container">
+      <h2>Login</h2>
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-input" required />
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe"> Remember Me</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Login</button>
+        <p class="switch-text"><a href="#">Forgot Password?</a></p>
+        <p class="switch-text">Don’t have an account? <a href="register.html">Register</a></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
